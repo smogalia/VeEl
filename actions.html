@@ -34,7 +34,7 @@
     <main>
         <section class="p-20 mt-3">
             <h2 class="text-bold text-center">Association Véhicules Electriques</h2>
-            <div class="container">
+            <div class="container mt-3">
                 <div class="row g-1 justify-content-between">
                     <div class="col-12 col-lg-3 p-3 d-flex flex-column justify-content-between border border-dark text-justify card" style="width: 18rem">
                     <img src="ressources/top-view-electric-cars-charging.jpg" class="card-img-top rounded-lg" alt="">
@@ -71,13 +71,13 @@
                         <br/>
                         </p>
                         <div class="float-right">
-                            <button class="btn btn-danger" data-toggle="modal" data-target="#joinModal" type="button" disabled>Terminé</button>
+                            <button class="btn btn-danger" type="button" disabled>Terminé</button>
                         </div>
                     </div>
                 </div>
 
             <div class="col-12 col-lg-3 p-3 d-flex flex-column justify-content-between border border-dark text-justify card" style="width: 18rem">
-                <img src="ressources/two-charging-electric-cars-at-charge-station-in-the-city.jpg" class="card-img-top rounded-lg" alt="">
+                <img src="ressources/two-charging-electric-cars-at-charge-station-in-the-city.jpg" class="h-100 w-100 card-img-top rounded-lg" alt="">
                 <div class="card-body">
                     <h5 class="card-title">2e Rdv des électrifiés</h5>
                     <p class="card-text">
@@ -152,17 +152,65 @@
                             
                         </p>
                         <div class="float-right">
-                            <button class="btn btn-secondary" data-toggle="modal" data-target="#joinModal" type="button" disabled>Je m'inscris</button>
+                            <button class="btn btn-secondary" type="button" disabled>Je m'inscris</button>
                         </div>
                     </div>
                     </div>
                 </div>
-
             </div>           
-        </section>
+
+
+        <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="joinModalLabel">Participer au 2e Rdv des Electifiés</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="email">e-mail</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-check">
+                                <legend>Je viens avec </legend>
+                                <input class="form-check-input" type="checkbox" value="" id="voitureelect" checked>
+                                <label class="form-check-label" for="voitureelect">
+                                  une voiture électrique
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="motoelect">
+                                <label class="form-check-label" for="motoelect">
+                                  une moto électrique
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="trotelect">
+                                <label class="form-check-label" for="trotelect">
+                                  une trotinette électrique
+                                </label>
+                              </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Envoyer le message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
 
-    <footer class="alert alert-dark text-italic text-center p-10 m-10">
+    <footer class="alert alert-dark text-italic text-center p-10 mt-3">
         <div>
             <p>Suivez nous sur les réseaux sociaux !</p>
 
@@ -174,6 +222,14 @@
         </div>
         <p>@2021 Tous droits réservés</p>
     </footer>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 </html>
