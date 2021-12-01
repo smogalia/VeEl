@@ -1,4 +1,3 @@
 User-Agent: *
 Allow: /
-Sitemap: http://nifty-hugle-731da6.netlify.app/sitemap_index.xml
-
+Sitemap: https://smogalia12345.netlify.app/sitemap_index.xml
